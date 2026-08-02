@@ -9,16 +9,6 @@ export default defineNuxtConfig({
     enabled: true
   },
 
-  css: ['~/assets/css/main.css'],
-
-  routeRules: {
-    '/': { prerender: true }
-  },
-
-  runtimeConfig: {
-    geminiApiKey: process.env.GEMINI_API_KEY || ''
-  },
-
   app: {
     head: {
       htmlAttrs: { lang: 'en' },
@@ -26,6 +16,16 @@ export default defineNuxtConfig({
         { rel: 'icon', href: '/favicon.ico' }
       ]
     }
+  },
+
+  css: ['~/assets/css/main.css'],
+
+  runtimeConfig: {
+    geminiApiKey: process.env.GEMINI_API_KEY || ''
+  },
+
+  routeRules: {
+    '/': { prerender: true }
   },
 
   compatibilityDate: '2026-07-30',

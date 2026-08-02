@@ -4,21 +4,41 @@
       <div class="flex flex-col items-center justify-center gap-8">
         <!-- Quick Links -->
         <nav class="flex flex-wrap justify-center gap-8 text-sm font-medium">
-          <a v-for="link in links" :key="link.name" :href="link.href" class="text-slate-400 hover:text-primary-400 transition-colors">
+          <a
+            v-for="link in links"
+            :key="link.name"
+            :href="link.href"
+            class="text-slate-400 hover:text-primary-400 transition-colors"
+          >
             {{ link.name }}
           </a>
         </nav>
-        
+
         <!-- Built With -->
         <div class="flex items-center gap-2 text-slate-500 text-sm">
           <span>Built with</span>
-          <a href="https://nuxt.com" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Nuxt 4</a>
+          <a
+            href="https://nuxt.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-white transition-colors"
+          >Nuxt 4</a>
           <span>&middot;</span>
-          <a href="https://vuejs.org" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Vue 3</a>
+          <a
+            href="https://vuejs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-white transition-colors"
+          >Vue 3</a>
           <span>&middot;</span>
-          <a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Tailwind CSS</a>
+          <a
+            href="https://tailwindcss.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-white transition-colors"
+          >Tailwind CSS</a>
         </div>
-        
+
         <!-- Copyright -->
         <div class="text-slate-500 text-sm text-center">
           &copy; {{ currentYear }} Usaidh Mohamed. All rights reserved.

@@ -1,16 +1,29 @@
 <template>
-  <section id="experience" class="py-24 relative">
+  <section
+    id="experience"
+    class="py-24 relative"
+  >
     <div class="container mx-auto px-6">
-      <div class="mb-16 max-w-2xl" ref="headerRef" :class="getAnimClass(headerAnim)">
+      <div
+        ref="headerRef"
+        class="mb-16 max-w-2xl"
+        :class="getAnimClass(headerAnim)"
+      >
         <div class="flex items-center gap-4 mb-4">
-          <div class="h-1 w-12 bg-primary-500 rounded-full"></div>
-          <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">Experience</h2>
+          <div class="h-1 w-12 bg-primary-500 rounded-full" />
+          <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">
+            Experience
+          </h2>
         </div>
       </div>
 
-      <div class="relative max-w-4xl mx-auto" ref="timelineRef" :class="getAnimClass(timelineAnim)">
+      <div
+        ref="timelineRef"
+        class="relative max-w-4xl mx-auto"
+        :class="getAnimClass(timelineAnim)"
+      >
         <!-- Timeline Line -->
-        <div class="absolute left-2 md:left-1/2 top-0 bottom-0 w-px bg-slate-800/50 transform -translate-x-1/2"></div>
+        <div class="absolute left-2 md:left-1/2 top-0 bottom-0 w-px bg-slate-800/50 transform -translate-x-1/2" />
 
         <div class="space-y-12">
           <div
@@ -20,8 +33,11 @@
             :class="index % 2 === 0 ? 'md:flex-row-reverse' : ''"
           >
             <!-- Timeline Dot -->
-            <div class="absolute left-2 md:left-1/2 w-4 h-4 bg-primary-500 rounded-full border-4 border-[#080c1a] shadow-[0_0_10px_rgba(var(--color-primary-500),0.5)] transform -translate-x-1/2 z-10 transition-transform group-hover:scale-125" :class="{ 'animate-pulse bg-primary-400': job.current }"></div>
-            
+            <div
+              class="absolute left-2 md:left-1/2 w-4 h-4 bg-primary-500 rounded-full border-4 border-[#080c1a] shadow-[0_0_10px_rgba(var(--color-primary-500),0.5)] transform -translate-x-1/2 z-10 transition-transform group-hover:scale-125"
+              :class="{ 'animate-pulse bg-primary-400': job.current }"
+            />
+
             <!-- Mobile Date (Hidden on desktop) -->
             <div class="md:hidden self-start ml-10 mb-2 text-primary-400 font-medium text-sm">
               {{ job.dates }}
@@ -30,19 +46,31 @@
             <!-- Content Card -->
             <div class="w-full md:w-[calc(50%-3rem)] ml-10 md:ml-0 glass-card p-6 md:p-8 rounded-2xl border border-white/5 bg-white/5 backdrop-blur-md hover:bg-white/10 transition-colors duration-300">
               <div class="flex flex-col mb-4">
-                <h3 class="text-xl font-bold text-white mb-1">{{ job.role }}</h3>
+                <h3 class="text-xl font-bold text-white mb-1">
+                  {{ job.role }}
+                </h3>
                 <span class="text-lg text-slate-300 font-medium">{{ job.company }}</span>
               </div>
               <ul class="space-y-3">
-                <li v-for="(bullet, bIndex) in job.bullets" :key="bIndex" class="text-slate-400 text-sm md:text-base flex items-start gap-3">
-                  <UIcon name="i-lucide-check-circle-2" class="w-5 h-5 text-primary-500 shrink-0 mt-0.5" />
+                <li
+                  v-for="(bullet, bIndex) in job.bullets"
+                  :key="bIndex"
+                  class="text-slate-400 text-sm md:text-base flex items-start gap-3"
+                >
+                  <UIcon
+                    name="i-lucide-check-circle-2"
+                    class="w-5 h-5 text-primary-500 shrink-0 mt-0.5"
+                  />
                   <span>{{ bullet }}</span>
                 </li>
               </ul>
             </div>
 
             <!-- Desktop Date -->
-            <div class="hidden md:flex w-[calc(50%-3rem)] text-primary-400 font-medium tracking-wider" :class="index % 2 === 0 ? 'justify-end pr-12' : 'justify-start pl-12'">
+            <div
+              class="hidden md:flex w-[calc(50%-3rem)] text-primary-400 font-medium tracking-wider"
+              :class="index % 2 === 0 ? 'justify-end pr-12' : 'justify-start pl-12'"
+            >
               {{ job.dates }}
             </div>
           </div>

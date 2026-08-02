@@ -1,29 +1,39 @@
 <template>
-  <section id="skills" class="py-24 relative overflow-hidden bg-[#080c1a]">
+  <section
+    id="skills"
+    class="py-24 relative overflow-hidden bg-[#080c1a]"
+  >
     <div class="container mx-auto px-4 md:px-8">
       <div class="mb-16 animate-on-scroll">
-        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Technical Skills</h2>
-        <div class="h-1 w-20 bg-[var(--ui-primary)] rounded-full shadow-[0_0_10px_var(--ui-primary)]"></div>
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+          Technical Skills
+        </h2>
+        <div class="h-1 w-20 bg-[var(--ui-primary)] rounded-full shadow-[0_0_10px_var(--ui-primary)]" />
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 stagger-children">
-        <div 
-          v-for="(category, index) in skillCategories" 
+        <div
+          v-for="(category, index) in skillCategories"
           :key="index"
           class="bg-[#0f1629]/80 backdrop-blur-md border border-slate-800 hover:border-slate-600 transition-all duration-300 rounded-2xl p-6 md:p-8 animate-on-scroll shadow-lg hover:shadow-xl hover:shadow-[var(--ui-primary)]/5"
         >
           <div class="flex items-center gap-4 mb-6">
             <div class="flex-shrink-0 w-10 h-10 bg-slate-800/80 rounded-lg flex items-center justify-center border border-slate-700">
-              <UIcon :name="category.icon" class="w-5 h-5 text-[var(--ui-primary)]" />
+              <UIcon
+                :name="category.icon"
+                class="w-5 h-5 text-[var(--ui-primary)]"
+              />
             </div>
-            <h3 class="text-xl font-semibold text-white">{{ category.name }}</h3>
+            <h3 class="text-xl font-semibold text-white">
+              {{ category.name }}
+            </h3>
           </div>
-          
+
           <div class="flex flex-wrap gap-2.5">
-            <UBadge 
-              v-for="skill in category.skills" 
+            <UBadge
+              v-for="skill in category.skills"
               :key="skill"
-              color="neutral" 
+              color="neutral"
               variant="subtle"
               class="skill-pill cursor-default hover:bg-slate-700 hover:text-white hover:border-[var(--ui-primary)]/50 hover:shadow-[0_0_10px_var(--ui-primary)/30] transition-all duration-300 border border-slate-800/50"
             >

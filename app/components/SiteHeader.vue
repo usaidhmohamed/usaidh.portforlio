@@ -40,14 +40,50 @@ const scrollTo = (id: string) => {
         <div class="font-mono text-xl font-bold text-white tracking-tighter">
           UM<span class="text-blue-500">.</span>
         </div>
-        
+
         <nav class="hidden md:flex items-center gap-6">
-          <button @click="scrollTo('about')" class="text-sm font-medium transition-colors hover:text-blue-400" :class="activeSection === 'about' ? 'text-blue-400' : 'text-slate-300'">About</button>
-          <button @click="scrollTo('leadership')" class="text-sm font-medium transition-colors hover:text-blue-400" :class="activeSection === 'leadership' ? 'text-blue-400' : 'text-slate-300'">Leadership</button>
-          <button @click="scrollTo('skills')" class="text-sm font-medium transition-colors hover:text-blue-400" :class="activeSection === 'skills' ? 'text-blue-400' : 'text-slate-300'">Skills</button>
-          <button @click="scrollTo('projects')" class="text-sm font-medium transition-colors hover:text-blue-400" :class="activeSection === 'projects' ? 'text-blue-400' : 'text-slate-300'">Projects</button>
-          <button @click="scrollTo('experience')" class="text-sm font-medium transition-colors hover:text-blue-400" :class="activeSection === 'experience' ? 'text-blue-400' : 'text-slate-300'">Experience</button>
-          <button @click="scrollTo('contact')" class="text-sm font-medium transition-colors hover:text-blue-400" :class="activeSection === 'contact' ? 'text-blue-400' : 'text-slate-300'">Contact</button>
+          <button
+            class="text-sm font-medium transition-colors hover:text-blue-400"
+            :class="activeSection === 'about' ? 'text-blue-400' : 'text-slate-300'"
+            @click="scrollTo('about')"
+          >
+            About
+          </button>
+          <button
+            class="text-sm font-medium transition-colors hover:text-blue-400"
+            :class="activeSection === 'leadership' ? 'text-blue-400' : 'text-slate-300'"
+            @click="scrollTo('leadership')"
+          >
+            Leadership
+          </button>
+          <button
+            class="text-sm font-medium transition-colors hover:text-blue-400"
+            :class="activeSection === 'skills' ? 'text-blue-400' : 'text-slate-300'"
+            @click="scrollTo('skills')"
+          >
+            Skills
+          </button>
+          <button
+            class="text-sm font-medium transition-colors hover:text-blue-400"
+            :class="activeSection === 'projects' ? 'text-blue-400' : 'text-slate-300'"
+            @click="scrollTo('projects')"
+          >
+            Projects
+          </button>
+          <button
+            class="text-sm font-medium transition-colors hover:text-blue-400"
+            :class="activeSection === 'experience' ? 'text-blue-400' : 'text-slate-300'"
+            @click="scrollTo('experience')"
+          >
+            Experience
+          </button>
+          <button
+            class="text-sm font-medium transition-colors hover:text-blue-400"
+            :class="activeSection === 'contact' ? 'text-blue-400' : 'text-slate-300'"
+            @click="scrollTo('contact')"
+          >
+            Contact
+          </button>
         </nav>
 
         <div class="flex items-center gap-4">

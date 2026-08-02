@@ -14,7 +14,7 @@ const rateLimitMap = new Map<string, RateLimitEntry>()
 const RATE_LIMIT_MAX = 20
 const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000 // 10 minutes
 
-function getRateLimitKey(event: any): string {
+function getRateLimitKey(event: H3Event): string {
   const forwarded = getHeader(event, 'x-forwarded-for')
   return forwarded?.split(',')[0]?.trim() || getHeader(event, 'x-real-ip') || 'anonymous'
 }
@@ -131,7 +131,7 @@ export default defineEventHandler(async (event) => {
   if (!apiKey) {
     console.error('GEMINI_API_KEY is not configured')
     return {
-      reply: "I'm currently unavailable. The AI service hasn't been configured yet. Please reach out to Usaidh directly via email or LinkedIn!"
+      reply: 'I\'m currently unavailable. The AI service hasn\'t been configured yet. Please reach out to Usaidh directly via email or LinkedIn!'
     }
   }
 
@@ -148,14 +148,14 @@ export default defineEventHandler(async (event) => {
       }
     })
 
-    const reply = response.text || "I couldn't generate a response. Please try asking something else!"
+    const reply = response.text || 'I couldn\'t generate a response. Please try asking something else!'
 
     return { reply }
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error('Gemini API error:', error?.message || error)
 
     return {
-      reply: "I'm having trouble connecting to the AI service right now. Please try again later, or reach out to Usaidh directly via the contact section below!"
+      reply: 'I\'m having trouble connecting to the AI service right now. Please try again later, or reach out to Usaidh directly via the contact section below!'
     }
   }
 })
