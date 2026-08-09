@@ -82,19 +82,19 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
-import { useScrollAnimation } from '~/composables/useScrollAnimation'
+import { useScrollAnimation, type AnimState } from '~/composables/useScrollAnimation'
 
 const { setupAnimation, getAnimClass } = useScrollAnimation()
 
 const headerRef = ref<HTMLElement | null>(null)
-const headerAnim = ref({ isVisible: false, hasAnimated: false })
+const headerAnim = ref<AnimState>({ isVisible: false, hasAnimated: false })
 
 const timelineRef = ref<HTMLElement | null>(null)
-const timelineAnim = ref({ isVisible: false, hasAnimated: false })
+const timelineAnim = ref<AnimState>({ isVisible: false, hasAnimated: false })
 
 onMounted(() => {
-  setupAnimation(headerRef, headerAnim, { threshold: 0.2 })
-  setupAnimation(timelineRef, timelineAnim, { threshold: 0.1, delay: 200 })
+  setupAnimation(headerRef, headerAnim)
+  setupAnimation(timelineRef, timelineAnim, { delay: 200 })
 })
 
 const jobs = [

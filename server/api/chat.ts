@@ -14,7 +14,8 @@ const rateLimitMap = new Map<string, RateLimitEntry>()
 const RATE_LIMIT_MAX = 20
 const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000 // 10 minutes
 
-function getRateLimitKey(event: H3Event): string {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function getRateLimitKey(event: any): string {
   const forwarded = getHeader(event, 'x-forwarded-for')
   return forwarded?.split(',')[0]?.trim() || getHeader(event, 'x-real-ip') || 'anonymous'
 }
@@ -152,7 +153,7 @@ export default defineEventHandler(async (event) => {
 
     return { reply }
   } catch (error: unknown) {
-    console.error('Gemini API error:', error?.message || error)
+    console.error('Gemini API error:', error instanceof Error ? error.message : error)
 
     return {
       reply: 'I\'m having trouble connecting to the AI service right now. Please try again later, or reach out to Usaidh directly via the contact section below!'

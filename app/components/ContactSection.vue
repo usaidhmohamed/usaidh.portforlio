@@ -129,23 +129,23 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
-import { useScrollAnimation } from '~/composables/useScrollAnimation'
+import { useScrollAnimation, type AnimState } from '~/composables/useScrollAnimation'
 
 const { setupAnimation, getAnimClass } = useScrollAnimation()
 
 const headerRef = ref<HTMLElement | null>(null)
-const headerAnim = ref({ isVisible: false, hasAnimated: false })
+const headerAnim = ref<AnimState>({ isVisible: false, hasAnimated: false })
 
 const formRef = ref<HTMLElement | null>(null)
-const formAnim = ref({ isVisible: false, hasAnimated: false })
+const formAnim = ref<AnimState>({ isVisible: false, hasAnimated: false })
 
 const infoRef = ref<HTMLElement | null>(null)
-const infoAnim = ref({ isVisible: false, hasAnimated: false })
+const infoAnim = ref<AnimState>({ isVisible: false, hasAnimated: false })
 
 onMounted(() => {
-  setupAnimation(headerRef, headerAnim, { threshold: 0.2 })
-  setupAnimation(formRef, formAnim, { threshold: 0.2, delay: 100 })
-  setupAnimation(infoRef, infoAnim, { threshold: 0.2, delay: 200 })
+  setupAnimation(headerRef, headerAnim)
+  setupAnimation(formRef, formAnim, { delay: 100 })
+  setupAnimation(infoRef, infoAnim, { delay: 200 })
 })
 
 const form = ref({

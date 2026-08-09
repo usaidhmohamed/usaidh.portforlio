@@ -83,8 +83,9 @@ export function useScrollAnimation(selector: string = '.animate-on-scroll') {
         }
       }, 100)
     },
-    getAnimClass: (animRef?: Ref<AnimState>) => {
-      return ['animate-on-scroll', animRef?.value?.isVisible ? 'is-visible' : '']
+    getAnimClass: (animRef?: Ref<AnimState> | AnimState) => {
+      const state = animRef && 'value' in animRef ? animRef.value : animRef
+      return ['animate-on-scroll', state?.isVisible ? 'is-visible' : '']
     }
   }
 }
