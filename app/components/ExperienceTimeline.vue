@@ -1,12 +1,12 @@
 <template>
   <section
     id="experience"
-    class="py-24 relative"
+    class="py-12 md:py-20 relative"
   >
     <div class="container mx-auto px-6">
       <div
         ref="headerRef"
-        class="mb-16 max-w-2xl"
+        class="mb-8 md:mb-16 max-w-2xl"
         :class="getAnimClass(headerAnim)"
       >
         <div class="flex items-center gap-4 mb-4">

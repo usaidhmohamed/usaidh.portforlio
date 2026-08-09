@@ -1,7 +1,7 @@
 <template>
   <section
     id="contact"
-    class="py-24 relative overflow-hidden"
+    class="py-12 md:py-20 relative overflow-hidden"
   >
     <!-- Background Glow -->
     <div class="absolute top-1/2 left-0 w-[600px] h-[600px] bg-primary-500/5 rounded-full blur-3xl -translate-y-1/2 -translate-x-1/4 pointer-events-none" />
@@ -9,7 +9,7 @@
     <div class="container mx-auto px-6 relative z-10">
       <div
         ref="headerRef"
-        class="mb-16 max-w-2xl mx-auto text-center"
+        class="mb-8 md:mb-16 max-w-2xl mx-auto text-center"
         :class="getAnimClass(headerAnim)"
       >
         <div class="flex items-center justify-center gap-4 mb-6">
@@ -155,7 +155,7 @@ const form = ref({
 })
 
 const contactInfo = [
-  { label: 'Email', value: 'uaidh.ai@gmail.com', icon: 'i-lucide-mail', link: 'mailto:uaidh.ai@gmail.com' },
+  { label: 'Email', value: 'usaidh.ai@gmail.com', icon: 'i-lucide-mail', link: 'mailto:usaidh.ai@gmail.com' },
   { label: 'LinkedIn', value: 'linkedin.com/in/usaidh', icon: 'i-simple-icons-linkedin', link: 'https://linkedin.com/in/usaidh' },
   { label: 'Location', value: 'Singapore', icon: 'i-lucide-map-pin', link: '#' }
 ]
@@ -163,7 +163,7 @@ const contactInfo = [
 const submitForm = () => {
   const subject = encodeURIComponent(`New Contact Request from ${form.value.name}`)
   const body = encodeURIComponent(`Name: ${form.value.name}\nEmail: ${form.value.email}\n\nMessage:\n${form.value.message}`)
-  window.location.href = `mailto:uaidh.ai@gmail.com?subject=${subject}&body=${body}`
+  window.location.href = `mailto:usaidh.ai@gmail.com?subject=${subject}&body=${body}`
 }
 </script>
 

@@ -29,7 +29,7 @@ doc.fillColor(ACCENT).fontSize(12).font('Helvetica-Bold').text('Frontend Technic
 
 // Contact Info & Portfolio Link
 doc.fontSize(9).font('Helvetica').fillColor(TEXT_MUTED)
-doc.text('Singapore  |  uaidh.ai@gmail.com  |  linkedin.com/in/usaidh  |  Portfolio: ', { continued: true })
+doc.text('Singapore  |  usaidh.ai@gmail.com  |  linkedin.com/in/usaidh  |  Portfolio: ', { continued: true })
 doc.fillColor(ACCENT).font('Helvetica-Bold').text('https://usaidh-portforlio.vercel.app/', { link: 'https://usaidh-portforlio.vercel.app/' })
 
 doc.moveDown(0.8)

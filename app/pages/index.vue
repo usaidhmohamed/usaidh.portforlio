@@ -16,34 +16,26 @@ useHead({
       <HeroSection />
 
       <div class="grid-bg">
-        <UContainer class="py-24 space-y-32">
-          <AboutSection />
-          <LeadershipSection />
-          <SkillsSection />
-        </UContainer>
+        <AboutSection />
+        <LeadershipSection />
+        <SkillsSection />
       </div>
 
       <div class="bg-navy-900 border-y border-white/5 relative overflow-hidden">
         <div class="absolute inset-0 bg-blue-500/5 blur-[120px] rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-3xl" />
-        <UContainer class="py-24 relative z-10">
-          <ProjectsSection />
-        </UContainer>
+        <ProjectsSection />
       </div>
 
       <div
         id="ai-assistant"
         class="grid-bg"
       >
-        <UContainer class="py-24 space-y-32">
-          <AiPlayground />
-          <ExperienceTimeline />
-        </UContainer>
+        <AiPlayground />
+        <ExperienceTimeline />
       </div>
 
       <div class="bg-navy-900 relative">
-        <UContainer class="py-24">
-          <ContactSection />
-        </UContainer>
+        <ContactSection />
       </div>
     </main>
 

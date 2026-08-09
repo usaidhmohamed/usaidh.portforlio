@@ -1,7 +1,7 @@
 <template>
   <section
     id="about"
-    class="py-24 bg-[#0f1629] relative overflow-hidden"
+    class="py-12 md:py-20 bg-[#0f1629] relative overflow-hidden"
   >
     <!-- Decorative elements -->
     <div class="absolute top-0 right-0 w-96 h-96 bg-primary-500/5 rounded-full blur-[100px] pointer-events-none" />
@@ -9,7 +9,7 @@
 
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl relative z-10">
       <!-- Section Header -->
-      <div class="animate-on-scroll opacity-0 translate-y-4 mb-16 flex flex-col items-center md:items-start">
+      <div class="animate-on-scroll opacity-0 translate-y-4 mb-8 md:mb-16 flex flex-col items-center md:items-start">
         <div class="flex items-center gap-4 mb-4">
           <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">
             About

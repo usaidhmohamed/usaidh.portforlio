@@ -1,7 +1,7 @@
 <template>
   <section
     id="hero"
-    class="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#080c1a] pt-20 pb-16"
+    class="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#080c1a] pt-20 pb-10 md:pb-16"
   >
     <!-- Grid Pattern Overlay -->
     <div class="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]" />

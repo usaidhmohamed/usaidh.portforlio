@@ -1,10 +1,10 @@
 <template>
   <section
     id="leadership"
-    class="py-24 relative overflow-hidden"
+    class="py-12 md:py-20 relative overflow-hidden"
   >
     <div class="container mx-auto px-4 md:px-8">
-      <div class="mb-16 animate-on-scroll">
+      <div class="mb-8 md:mb-16 animate-on-scroll">
         <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
           Leadership Highlights
         </h2>

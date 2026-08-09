@@ -38,12 +38,12 @@ const projects = [
 <template>
   <section
     id="projects"
-    class="py-24 relative"
+    class="py-12 md:py-20 relative"
     v-bind="animateOnScroll"
     :class="staggerChildren"
   >
     <div class="container mx-auto px-4 max-w-7xl">
-      <div class="mb-16 text-center">
+      <div class="mb-8 md:mb-16 text-center">
         <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">
           Featured Projects
         </h2>
