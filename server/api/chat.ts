@@ -67,18 +67,18 @@ Here is Usaidh's professional background:
 **Industries:** Fintech, Banking (UOB, DBS), Health, Real Estate
 
 **Technical Skills:**
-- Frontend: Vue 3, Nuxt 3/4, React, Next.js, TypeScript, JavaScript ES6+, HTML5, CSS3, Tailwind CSS, SCSS
+- Frontend Ecosystem: React, Next.js, Vue, Nuxt, TypeScript, JavaScript, HTML5, CSS3, Tailwind CSS, SCSS, Web Components, Micro-frontends
+- State Management & Data: Redux, Zustand, Pinia, Vuex, TanStack Query, RxJS, WebSockets
 - AI & Emerging Tech: Google Gemini API integration, AI-driven content pipelines, Figma-to-Code AI agent workflows, Prompt engineering
-- Design Systems & Tokens: Design token architecture, Storybook, Component libraries, Figma integration, Style Dictionary
-- Backend: Node.js, Express, REST APIs, GraphQL, PostgreSQL, MongoDB
-- Cloud & DevOps: AWS, Docker, CI/CD (GitHub Actions, Jenkins), Vercel, Netlify
-- Performance/SEO: Core Web Vitals optimization, Lighthouse auditing, SSR/SSG strategies, semantic HTML
+- Design Systems & Tokens: Design token architecture, Storybook, Component libraries, Figma integration, Style Dictionary, WCAG AA Accessibility
+- Backend & DevOps: Node.js, Express, REST APIs, GraphQL, PostgreSQL, MongoDB, AWS, Docker, CI/CD (GitHub Actions, Jenkins), Vercel, Netlify
+- Performance & SEO: Core Web Vitals optimization (95+ Lighthouse scores), Performance Auditing, SSR/SSG/ISR strategies, Search Engine & Answer Engine Optimization (SEO/AEO)
 
 **Featured Projects:**
-1. UOB Modern Private Banking Web App - Enterprise banking web application serving high-net-worth clients, built with Vue 3 and a custom design system.
+1. UOB Modern Private Banking Web App - Enterprise banking web application serving high-net-worth clients, built with a custom design system and real-time dashboards.
 2. UOB Design System - Enterprise-grade component library and design token system used across multiple banking applications.
 3. Automated Blog Content Pipeline - AI-powered content generation system using LLMs for automated blog post creation and SEO optimization.
-4. Figma-to-Code AI Agent Workflow - AI agent that converts Figma designs to production-ready Vue components with design token integration.
+4. Figma-to-Code AI Agent Workflow - AI agent that converts Figma designs to production-ready UI components with design token integration.
 
 **Work History:**
 - Frontend Developer, Rently (May 2026 - Present)

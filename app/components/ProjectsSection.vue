@@ -7,16 +7,16 @@ const projects = [
   {
     title: 'UOB Modern Private Banking Web App',
     problem: 'High-net-worth clients needed a sophisticated, secure digital banking experience that matched the premium service they received in-person.',
-    approach: 'Architected a Vue 3 SPA with a custom design system, biometric authentication flows, and real-time portfolio dashboards with WebSocket integration.',
+    approach: 'Architected a Vue web application with a custom design system, biometric authentication flows, and real-time portfolio dashboards with WebSocket integration.',
     outcome: 'Delivered a platform serving 50K+ HNW clients with 99.9% uptime and a 40% increase in digital engagement.',
-    tags: ['Vue 3', 'TypeScript', 'Design System', 'WebSocket', 'Biometric Auth']
+    tags: ['Vue', 'TypeScript', 'Design System', 'WebSocket', 'Biometric Auth']
   },
   {
     title: 'UOB Enterprise Design System',
     problem: '20+ banking applications built by different teams led to inconsistent UI, duplicated effort, and poor accessibility scores.',
     approach: 'Built a design token architecture with Style Dictionary, created 60+ accessible components in Storybook, and established governance processes for contributions.',
     outcome: 'Unified UI across 20+ apps, reduced new feature development time by 35%, and achieved WCAG AA compliance bank-wide.',
-    tags: ['Design Tokens', 'Storybook', 'Style Dictionary', 'Vue 3', 'Accessibility']
+    tags: ['Design Tokens', 'Storybook', 'Style Dictionary', 'Vue', 'Accessibility']
   },
   {
     title: 'Automated Blog Content Pipeline',
@@ -30,7 +30,7 @@ const projects = [
     problem: 'Design-to-development handoff created bottlenecks—developers spent days translating Figma specs into pixel-perfect Vue components.',
     approach: 'Developed an AI agent workflow that extracts design tokens from Figma, generates Vue component scaffolds with proper prop interfaces, and maps to the existing design system.',
     outcome: 'Reduced component development time by 60%, eliminated design-dev misalignment, and standardized the component creation process.',
-    tags: ['Figma API', 'AI Agent', 'Vue 3', 'Design Tokens', 'Code Generation']
+    tags: ['Figma API', 'AI Agent', 'Vue', 'Design Tokens', 'Code Generation']
   }
 ]
 </script>

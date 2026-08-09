@@ -60,7 +60,7 @@ const skillCategories = [
   {
     icon: 'i-lucide-monitor',
     name: 'Frontend',
-    skills: ['Vue 3', 'Nuxt 3/4', 'React', 'Next.js', 'TypeScript', 'JavaScript ES6+', 'HTML5', 'CSS3', 'Tailwind CSS', 'SCSS']
+    skills: ['Vue', 'Nuxt', 'React', 'Next.js', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'Tailwind CSS', 'SCSS']
   },
   {
     icon: 'i-lucide-sparkles',

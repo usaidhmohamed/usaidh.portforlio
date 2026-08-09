@@ -30,7 +30,10 @@ useHead({
         </UContainer>
       </div>
 
-      <div class="grid-bg" id="ai-assistant">
+      <div
+        id="ai-assistant"
+        class="grid-bg"
+      >
         <UContainer class="py-24 space-y-32">
           <AiPlayground />
           <ExperienceTimeline />

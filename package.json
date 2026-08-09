@@ -3,10 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
+    "build": "node scripts/generate-resume.js && nuxt build",
+    "dev": "node scripts/generate-resume.js && nuxt dev",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
+    "postinstall": "nuxt prepare && node scripts/generate-resume.js",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "typecheck": "nuxt typecheck"
@@ -16,7 +16,10 @@
     "@iconify-json/lucide": "^1.2.120",
     "@iconify-json/simple-icons": "^1.2.92",
     "@nuxt/ui": "^4.10.0",
+    "@types/pdfkit": "^0.17.6",
+    "@vercel/speed-insights": "^2.0.0",
     "nuxt": "^4.4.8",
+    "pdfkit": "^0.19.1",
     "tailwindcss": "^4.3.3"
   },
   "devDependencies": {

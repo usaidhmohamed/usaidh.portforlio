@@ -101,6 +101,8 @@ const scrollTo = (id: string) => {
             variant="solid"
             to="/resume.pdf"
             target="_blank"
+            download
+            icon="i-lucide-download"
             class="hidden sm:flex"
           />
         </div>

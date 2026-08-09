@@ -20,7 +20,7 @@
           <div class="h-1 w-12 bg-primary-500 rounded-full" />
         </div>
         <p class="text-slate-400 text-lg">
-          Have a project in mind or want to discuss opportunities? I'd love to hear from you.
+          Have a technical challenge, project, or collaboration in mind? Let's connect.
         </p>
       </div>
 

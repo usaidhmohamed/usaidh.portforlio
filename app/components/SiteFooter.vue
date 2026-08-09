@@ -29,7 +29,7 @@
             target="_blank"
             rel="noopener noreferrer"
             class="hover:text-white transition-colors"
-          >Vue 3</a>
+          >Vue</a>
           <span>&middot;</span>
           <a
             href="https://tailwindcss.com"
