@@ -74,7 +74,8 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    '/': { prerender: true }
+    '/': { prerender: true },
+    '/beta': { prerender: true }
   },
 
   compatibilityDate: '2026-07-30',

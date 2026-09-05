@@ -86,7 +86,19 @@ const scrollTo = (id: string) => {
           </button>
         </nav>
 
-        <div class="flex items-center gap-4">
+        <div class="flex items-center gap-3">
+          <UButton
+            to="/beta"
+            color="primary"
+            variant="subtle"
+            icon="i-lucide-sparkles"
+            class="relative border border-primary-500/40 text-xs font-semibold shadow-[0_0_12px_rgba(59,130,246,0.3)] hover:shadow-[0_0_18px_rgba(59,130,246,0.5)] transition-all rounded-lg"
+          >
+            <span class="flex items-center gap-1.5">
+              <span>Try OS Beta</span>
+              <span class="px-1 py-0.5 text-[9px] bg-primary-500 text-white rounded font-mono font-bold tracking-wider">NEW</span>
+            </span>
+          </UButton>
           <UButton
             to="https://github.com/usaidhmohamed"
             target="_blank"

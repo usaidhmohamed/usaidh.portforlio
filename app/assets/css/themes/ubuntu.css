@@ -1,0 +1,104 @@
+/* Ubuntu 22.04 LTS (Yaru Dark & GNOME Shell) Theme */
+[data-os-theme="ubuntu"] {
+  --os-desktop-bg: radial-gradient(ellipse at 70% 30%, #5e2750 0%, #380c2a 45%, #2c001e 75%, #180010 100%);
+  --os-font-family: 'Ubuntu', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --os-window-bg: #242424;
+  --os-window-border: rgba(255, 255, 255, 0.08);
+  --os-window-radius: 8px;
+  --os-window-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.8);
+  --os-window-shadow-focused: 0 22px 48px rgba(0, 0, 0, 0.8), 0 0 1px rgba(233, 84, 32, 0.4);
+
+  --os-titlebar-bg: #303030;
+  --os-titlebar-color: #ffffff;
+  --os-titlebar-height: 36px;
+  --os-titlebar-border: #222222;
+
+  --os-taskbar-bg: #111111;
+  --os-taskbar-color: #ffffff;
+  --os-taskbar-height: 28px;
+  --os-taskbar-border: transparent;
+
+  --os-accent: #e95420;
+  --os-accent-text: #ffffff;
+}
+
+[data-os-theme="ubuntu"] .os-window {
+  color: #eeeeee;
+}
+
+[data-os-theme="ubuntu"] .os-titlebar {
+  font-weight: 500;
+  font-size: 13px;
+}
+
+/* Ubuntu Top GNOME Panel */
+[data-os-theme="ubuntu"] .ubuntu-top-panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 28px;
+  background: #111111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  font-size: 13px;
+  color: #dddddd;
+  z-index: 9999;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+[data-os-theme="ubuntu"] .ubuntu-activities {
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+[data-os-theme="ubuntu"] .ubuntu-activities:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Ubuntu Left Dash-to-Dock */
+[data-os-theme="ubuntu"] .ubuntu-dock {
+  position: absolute;
+  top: 28px;
+  bottom: 0;
+  left: 0;
+  width: 54px;
+  background: rgba(17, 17, 17, 0.95);
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 0;
+  gap: 12px;
+  z-index: 9998;
+}
+
+/* Ubuntu Window Controls (Circular buttons on right) */
+[data-os-theme="ubuntu"] .ubuntu-ctrl-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: #eeeeee;
+  cursor: pointer;
+  transition: background 0.15s ease;
+  font-size: 11px;
+}
+
+[data-os-theme="ubuntu"] .ubuntu-ctrl-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+[data-os-theme="ubuntu"] .ubuntu-ctrl-close:hover {
+  background: #e95420 !important;
+  color: #ffffff !important;
+}

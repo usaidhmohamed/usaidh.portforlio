@@ -1,0 +1,112 @@
+/* Mac OS X Aqua / Snow Leopard Theme */
+[data-os-theme="macos"] {
+  --os-desktop-bg: radial-gradient(ellipse at center, #1b263b 0%, #0d1b2a 60%, #050a12 100%);
+  --os-font-family: -apple-system, 'Lucida Grande', Helvetica, Arial, sans-serif;
+
+  --os-window-bg: #ececec;
+  --os-window-border: rgba(0, 0, 0, 0.25);
+  --os-window-radius: 10px;
+  --os-window-shadow: 0 18px 45px rgba(0, 0, 0, 0.5), 0 0 1px rgba(0, 0, 0, 0.4);
+  --os-window-shadow-focused: 0 25px 60px rgba(0, 0, 0, 0.7), 0 0 1px rgba(0, 0, 0, 0.6);
+
+  --os-titlebar-bg: linear-gradient(to bottom, #e8e8e8 0%, #d4d4d4 100%);
+  --os-titlebar-color: #333333;
+  --os-titlebar-height: 28px;
+  --os-titlebar-border: #b8b8b8;
+
+  --os-taskbar-bg: rgba(255, 255, 255, 0.35);
+  --os-taskbar-color: #ffffff;
+  --os-taskbar-height: 64px;
+  --os-taskbar-border: rgba(255, 255, 255, 0.2);
+
+  --os-accent: #0066cc;
+  --os-accent-text: #ffffff;
+}
+
+[data-os-theme="macos"] .os-window {
+  color: #222222;
+}
+
+[data-os-theme="macos"] .os-titlebar {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+/* macOS Traffic Light Buttons */
+[data-os-theme="macos"] .macos-traffic-lights {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+[data-os-theme="macos"] .macos-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.6), 0 1px 1px rgba(0, 0, 0, 0.15);
+  transition: opacity 0.15s ease, filter 0.15s ease;
+  position: relative;
+}
+
+[data-os-theme="macos"] .macos-btn:hover {
+  filter: brightness(0.9);
+}
+
+[data-os-theme="macos"] .macos-btn-close {
+  background: radial-gradient(circle at 50% 30%, #ff796c 0%, #ff5f56 50%, #e0443e 100%);
+  border-color: #cf352b;
+}
+
+[data-os-theme="macos"] .macos-btn-min {
+  background: radial-gradient(circle at 50% 30%, #ffdf6d 0%, #ffbd2e 50%, #dea123 100%);
+  border-color: #cf911a;
+}
+
+[data-os-theme="macos"] .macos-btn-max {
+  background: radial-gradient(circle at 50% 30%, #46e35d 0%, #27c93f 50%, #1aab29 100%);
+  border-color: #1b9627;
+}
+
+/* Top Mac Menu Bar */
+[data-os-theme="macos"] .macos-menubar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 24px;
+  background: rgba(230, 230, 230, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #222222;
+  z-index: 9999;
+}
+
+/* 3D Glass Dock */
+[data-os-theme="macos"] .macos-dock-container {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  padding: 6px 14px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.6);
+  z-index: 9998;
+}

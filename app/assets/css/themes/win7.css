@@ -1,0 +1,83 @@
+/* Windows 7 Aero Theme */
+[data-os-theme="win7"] {
+  --os-desktop-bg: radial-gradient(circle at 50% 30%, #1e5799 0%, #207cca 35%, #184c8a 70%, #0d294d 100%);
+  --os-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  --os-window-bg: #f3f5f8;
+  --os-window-border: rgba(45, 110, 185, 0.45);
+  --os-window-radius: 8px;
+  --os-window-shadow: 0 10px 30px rgba(0, 30, 80, 0.45), 0 0 12px rgba(80, 160, 240, 0.35);
+  --os-window-shadow-focused: 0 14px 40px rgba(0, 35, 100, 0.6), 0 0 20px rgba(110, 190, 255, 0.5);
+
+  --os-titlebar-bg: linear-gradient(to bottom, rgba(230, 245, 255, 0.85) 0%, rgba(185, 220, 250, 0.65) 40%, rgba(140, 190, 240, 0.75) 100%);
+  --os-titlebar-color: #1a2530;
+  --os-titlebar-height: 32px;
+  --os-titlebar-border: rgba(255, 255, 255, 0.6);
+
+  --os-taskbar-bg: linear-gradient(to bottom, rgba(25, 45, 75, 0.8) 0%, rgba(10, 25, 45, 0.88) 100%);
+  --os-taskbar-color: #ffffff;
+  --os-taskbar-height: 44px;
+  --os-taskbar-border: rgba(140, 200, 255, 0.3);
+
+  --os-accent: #2779bd;
+  --os-accent-text: #ffffff;
+}
+
+[data-os-theme="win7"] .os-window {
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  background-color: rgba(245, 248, 252, 0.92);
+}
+
+[data-os-theme="win7"] .os-titlebar {
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.9), 0 0 4px #ffffff;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+[data-os-theme="win7"] .win7-ctrl-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 22px;
+  border-radius: 3px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(200, 220, 245, 0.4));
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: #1e293b;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+[data-os-theme="win7"] .win7-ctrl-btn:hover {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(220, 235, 255, 0.7));
+  box-shadow: 0 0 6px rgba(120, 180, 255, 0.7);
+}
+
+[data-os-theme="win7"] .win7-ctrl-close:hover {
+  background: linear-gradient(to bottom, #f87171, #dc2626) !important;
+  color: #ffffff !important;
+  border-color: #b91c1c !important;
+  box-shadow: 0 0 8px rgba(239, 68, 68, 0.8) !important;
+}
+
+/* Windows 7 Start Orb */
+[data-os-theme="win7"] .win7-start-orb {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #60a5fa 0%, #2563eb 45%, #1d4ed8 75%, #1e40af 100%);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.8), inset 0 2px 4px rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+[data-os-theme="win7"] .win7-start-orb:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 16px rgba(96, 165, 250, 1), inset 0 2px 6px rgba(255, 255, 255, 0.8);
+}

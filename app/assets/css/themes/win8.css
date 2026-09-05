@@ -1,0 +1,73 @@
+/* Windows 8 Metro / Modern Theme */
+[data-os-theme="win8"] {
+  --os-desktop-bg: linear-gradient(135deg, #001f3f 0%, #003366 50%, #005082 100%);
+  --os-font-family: 'Segoe UI', 'Segoe UI Web (West European)', sans-serif;
+
+  --os-window-bg: #ffffff;
+  --os-window-border: #0078d7;
+  --os-window-radius: 0px;
+  --os-window-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  --os-window-shadow-focused: 0 12px 32px rgba(0, 120, 215, 0.35);
+
+  --os-titlebar-bg: #0078d7;
+  --os-titlebar-color: #ffffff;
+  --os-titlebar-height: 32px;
+  --os-titlebar-border: transparent;
+
+  --os-taskbar-bg: #111111;
+  --os-taskbar-color: #ffffff;
+  --os-taskbar-height: 40px;
+  --os-taskbar-border: #222222;
+
+  --os-accent: #0078d7;
+  --os-accent-text: #ffffff;
+}
+
+[data-os-theme="win8"] .os-window {
+  border: 1px solid var(--os-window-border);
+  border-radius: 0 !important;
+}
+
+[data-os-theme="win8"] .os-titlebar {
+  border-radius: 0 !important;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 0.3px;
+}
+
+[data-os-theme="win8"] .win8-ctrl-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 32px;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  font-size: 11px;
+}
+
+[data-os-theme="win8"] .win8-ctrl-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+[data-os-theme="win8"] .win8-ctrl-close:hover {
+  background: #e81123 !important;
+}
+
+[data-os-theme="win8"] .win8-start-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 100%;
+  color: #0078d7;
+  transition: background 0.15s, color 0.15s;
+  cursor: pointer;
+}
+
+[data-os-theme="win8"] .win8-start-btn:hover {
+  background: #0078d7;
+  color: #ffffff;
+}
